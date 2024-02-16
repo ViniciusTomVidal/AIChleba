@@ -1,0 +1,93 @@
+/* http://meyerweb.com/eric/tools/css/reset/
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+    display: block;
+}
+body {
+    line-height: 1;
+    overflow-x:hidden;
+}
+ol, ul {
+    list-style: none;
+}
+blockquote, q {
+    quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+    content: '';
+    content: none;
+}
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+.ai {
+    width: 100vw;
+    min-height: 100vh;
+    background-image:url("bk.png");
+    background-size: cover;
+    padding: 61px;
+}
+
+.ai .grid {
+    max-width: 1320px;
+    margin: 20px auto 0;
+    box-sizing: border-box;
+    display: grid;
+    gap: 30px;
+    grid-template-columns: repeat(2, 1fr);
+}
+.ai img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+.ai h2 {
+    font-size: 48px;
+    text-align: center;
+    font-family: Roboto, sans-serif;
+    font-weight: 100;
+    text-transform: uppercase;
+    color: white;
+}
+
+.hei1 {
+    height: 100%;
+    min-height: calc(100vh - 60px);
+    display: flex;
+    align-items: center;
+}
+
+@media (max-width: 860px) {
+    .ai .grid {
+        grid-template-columns: repeat(1, 1fr);
+    }
+}
