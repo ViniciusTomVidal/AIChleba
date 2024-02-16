@@ -24,26 +24,32 @@ time, mark, audio, video {
     font: inherit;
     vertical-align: baseline;
 }
+
 /* HTML5 display-role reset for older browsers */
 article, aside, details, figcaption, figure,
 footer, header, hgroup, menu, nav, section {
     display: block;
 }
+
 body {
     line-height: 1;
-    overflow-x:hidden;
+    overflow-x: hidden;
 }
+
 ol, ul {
     list-style: none;
 }
+
 blockquote, q {
     quotes: none;
 }
+
 blockquote:before, blockquote:after,
 q:before, q:after {
     content: '';
     content: none;
 }
+
 table {
     border-collapse: collapse;
     border-spacing: 0;
@@ -52,7 +58,7 @@ table {
 .ai {
     width: 100vw;
     min-height: 100vh;
-    background-image:url("bk.png");
+    background-image: url("bk.png");
     background-size: cover;
     padding: 61px;
 }
@@ -65,11 +71,13 @@ table {
     gap: 30px;
     grid-template-columns: repeat(2, 1fr);
 }
+
 .ai img {
     display: block;
     max-width: 100%;
     height: auto;
 }
+
 .ai h2 {
     font-size: 48px;
     text-align: center;
@@ -81,7 +89,7 @@ table {
 
 .hei1 {
     height: 100%;
-    min-height: calc(100vh - 60px);
+    min-height: calc(100vh - 180px);
     display: flex;
     align-items: center;
 }
