@@ -35,14 +35,11 @@
         // Envia a URL do iframe para o documento pai
         function enviarURLParaPai() {
             var iframeURL = window.location.href;
-            parent.postMessage({ url: iframeURL }, '*');
+            parent.postMessage({ change:true }, '*');
             return;
         }
 
         // Chama a função quando a URL do iframe muda
-        window.addEventListener('hashchange', enviarURLParaPai);
-        window.addEventListener('load', enviarURLParaPai);
-
         window.addEventListener("click", enviarURLParaPai)
     </script>
 </body>
